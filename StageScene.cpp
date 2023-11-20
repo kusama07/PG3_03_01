@@ -14,7 +14,7 @@ void StageScene::Init()
 
 	playerPos_ = { 640,360 };
 
-	enemyPos_ = { 10,60 };
+	enemyPos_ = { 649,360 };
 
 	bulletPos_ = { 10,10 };
 
