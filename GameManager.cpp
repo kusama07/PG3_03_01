@@ -8,11 +8,10 @@ GameManager::GameManager()
 	sceneArr_[CLEAR] = std::make_unique<ClearScene>();
 
 	//　初期シーンの設定
-	int sceneNo = IScene_->GetSceneNo();
-	sceneArr_[sceneNo] = std::make_unique<TitleScene>();
+	sceneArr_[TITLE]->Init();
 
 	// inputManager_ の初期化
-	inputManager_ = std::make_unique<InputManager>();
+	inputManager_ = inputManager_->GetInstance();
 
 }
 
@@ -46,8 +45,8 @@ int GameManager::Run()
 		Novice::EndFrame(); // フレームの終了
 		
 		// ESCキーが押されたらループを抜ける
-		if (inputManager_->GetPreKeys(DIK_ESCAPE) == 0 &&
-			inputManager_->GetKeys(DIK_ESCAPE) != 0) {
+		if (inputManager_->IsKeyPressed(DIK_ESCAPE) == 0 &&
+			inputManager_->IsKeyTriggered(DIK_ESCAPE) != 0) {
 			break;
 		}
 	}

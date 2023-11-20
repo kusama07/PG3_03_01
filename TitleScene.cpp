@@ -16,7 +16,7 @@ void TitleScene::Init()
 
 void TitleScene::Update()
 {
-	if (inputManager_->GetKeys(DIK_RETURN))
+	if (inputManager_->IsKeyPressed(DIK_RETURN))
 	{
 		sceneNo = STAGE;
 	}

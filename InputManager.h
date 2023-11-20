@@ -1,30 +1,32 @@
 #pragma once
+
+#include "Input.h"
 #include "Novice.h"
 
-class InputManager
-{
+class InputManager {
 public:
+    // シングルトンの取得
+    static InputManager* GetInstance();
 
-	static InputManager* GetInstance();
+    // 初期化
 
-	void Update();
+    void Update();
 
-	bool GetKeys(BYTE keyNumber);
+    bool IsKeyPressed(BYTE keyNumber) const;
 
-	bool GetPreKeys(BYTE keyNumber);
+    bool IsKeyTriggered(BYTE keyNumber) const;
 
-	InputManager();
+private:
+    InputManager() = default;
+    ~InputManager();
+    InputManager(const InputManager&) = delete;
+    const InputManager& operator=(const InputManager&) = delete;
 
-	~InputManager();
-
-	InputManager(const InputManager&) = delete;
-
-	InputManager& operator=(const InputManager&) = delete;
 
 private:
 
-	char keys[256] = { 0 };
-	char preKeys[256] = { 0 };
+    char keys[256] = { 0 };
 
+    char preKeys[256] = { 0 };
 
 };

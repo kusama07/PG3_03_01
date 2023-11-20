@@ -27,6 +27,6 @@ public:
 private:
 	IScene* IScene_;
 
-	std::unique_ptr<InputManager> inputManager_;
+	InputManager* inputManager_ = nullptr;
 };
 
