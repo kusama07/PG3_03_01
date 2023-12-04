@@ -5,7 +5,7 @@
 #include "TitleScene.h"
 #include "ClearScene.h"
 #include "Novice.h"
-#include "InputManager.h"
+#include "Input/InputManager.h"
 
 class GameManager
 {

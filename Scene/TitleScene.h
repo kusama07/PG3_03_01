@@ -1,6 +1,6 @@
 #pragma once
 #include "IScene.h"
-#include "InputManager.h"
+#include "Input/InputManager.h"
 #include "ImGuiManager.h"
 
 class TitleScene : public IScene

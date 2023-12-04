@@ -20,6 +20,12 @@
     <Filter Include="KamataEngine\InputManager">
       <UniqueIdentifier>{b386a7ad-c221-4740-b02c-5f71eb334d02}</UniqueIdentifier>
     </Filter>
+    <Filter Include="GameSceneClass">
+      <UniqueIdentifier>{b5672a4e-fa93-4ccf-896b-1032aee13fc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Command">
+      <UniqueIdentifier>{e583e4f0-b26b-4966-8086-84b7c9936659}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C:\KamataEngine\DirectXGame\base\DirectXCommon.cpp">
@@ -44,22 +50,31 @@
     <ClCompile Include="C:\KamataEngine\DirectXGame\base\StringUtility.cpp">
       <Filter>KamataEngine\Source</Filter>
     </ClCompile>
-    <ClCompile Include="IScene.cpp">
+    <ClCompile Include="Input\InputManager.cpp">
+      <Filter>KamataEngine\InputManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\ClearScene.cpp">
       <Filter>Scene</Filter>
     </ClCompile>
-    <ClCompile Include="GameManager.cpp">
+    <ClCompile Include="Scene\GameManager.cpp">
       <Filter>Scene</Filter>
     </ClCompile>
-    <ClCompile Include="TitleScene.cpp">
+    <ClCompile Include="Scene\IScene.cpp">
       <Filter>Scene</Filter>
     </ClCompile>
-    <ClCompile Include="ClearScene.cpp">
+    <ClCompile Include="Scene\StageScene.cpp">
       <Filter>Scene</Filter>
     </ClCompile>
-    <ClCompile Include="StageScene.cpp">
+    <ClCompile Include="Scene\TitleScene.cpp">
       <Filter>Scene</Filter>
     </ClCompile>
-    <ClCompile Include="InputManager.cpp">
+    <ClCompile Include="GameSceneClass\Player.cpp">
+      <Filter>GameSceneClass</Filter>
+    </ClCompile>
+    <ClCompile Include="Command\Command.cpp">
+      <Filter>Command</Filter>
+    </ClCompile>
+    <ClCompile Include="Input\InputHandle.cpp">
       <Filter>KamataEngine\InputManager</Filter>
     </ClCompile>
   </ItemGroup>
@@ -136,22 +151,31 @@
       <Filter>KamataEngine\Include</Filter>
     </ClInclude>
     <ClInclude Include="resource.h" />
-    <ClInclude Include="IScene.h">
+    <ClInclude Include="Input\InputManager.h">
+      <Filter>KamataEngine\InputManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\ClearScene.h">
       <Filter>Scene</Filter>
     </ClInclude>
-    <ClInclude Include="GameManager.h">
+    <ClInclude Include="Scene\GameManager.h">
       <Filter>Scene</Filter>
     </ClInclude>
-    <ClInclude Include="TitleScene.h">
+    <ClInclude Include="Scene\IScene.h">
       <Filter>Scene</Filter>
     </ClInclude>
-    <ClInclude Include="ClearScene.h">
+    <ClInclude Include="Scene\StageScene.h">
       <Filter>Scene</Filter>
     </ClInclude>
-    <ClInclude Include="StageScene.h">
+    <ClInclude Include="Scene\TitleScene.h">
       <Filter>Scene</Filter>
     </ClInclude>
-    <ClInclude Include="InputManager.h">
+    <ClInclude Include="GameSceneClass\Player.h">
+      <Filter>GameSceneClass</Filter>
+    </ClInclude>
+    <ClInclude Include="Command\Command.h">
+      <Filter>Command</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\InputHandle.h">
       <Filter>KamataEngine\InputManager</Filter>
     </ClInclude>
   </ItemGroup>

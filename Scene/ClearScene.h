@@ -1,5 +1,5 @@
 #include "IScene.h"
-#include "InputManager.h"
+#include "Input/InputManager.h"
 #include "ImGuiManager.h"
 
 class ClearScene : public IScene{

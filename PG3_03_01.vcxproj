@@ -115,13 +115,16 @@ xcopy C:\KamataEngine\DirectXGame\Resources "$(OutDirFullPath)NoviceResources" /
     <ClCompile Include="C:\KamataEngine\DirectXGame\base\TextureManager.cpp" />
     <ClCompile Include="C:\KamataEngine\DirectXGame\2d\ImGuiManager.cpp" />
     <ClCompile Include="C:\KamataEngine\Adapter\Novice.cpp" />
-    <ClCompile Include="ClearScene.cpp" />
-    <ClCompile Include="GameManager.cpp" />
-    <ClCompile Include="InputManager.cpp" />
-    <ClCompile Include="IScene.cpp" />
+    <ClCompile Include="Command\Command.cpp" />
+    <ClCompile Include="GameSceneClass\Player.cpp" />
+    <ClCompile Include="Input\InputHandle.cpp" />
+    <ClCompile Include="Input\InputManager.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="StageScene.cpp" />
-    <ClCompile Include="TitleScene.cpp" />
+    <ClCompile Include="Scene\ClearScene.cpp" />
+    <ClCompile Include="Scene\GameManager.cpp" />
+    <ClCompile Include="Scene\IScene.cpp" />
+    <ClCompile Include="Scene\StageScene.cpp" />
+    <ClCompile Include="Scene\TitleScene.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\KamataEngine\DirectXGame\base\StringUtility.h" />
@@ -151,13 +154,16 @@ xcopy C:\KamataEngine\DirectXGame\Resources "$(OutDirFullPath)NoviceResources" /
     <ClInclude Include="C:\KamataEngine\DirectXGame\input\Input.h" />
     <ClInclude Include="C:\KamataEngine\DirectXGame\scene\GameScene.h" />
     <ClInclude Include="C:\KamataEngine\Adapter\Novice.h" />
-    <ClInclude Include="ClearScene.h" />
-    <ClInclude Include="GameManager.h" />
-    <ClInclude Include="InputManager.h" />
-    <ClInclude Include="IScene.h" />
+    <ClInclude Include="Command\Command.h" />
+    <ClInclude Include="GameSceneClass\Player.h" />
+    <ClInclude Include="Input\InputHandle.h" />
+    <ClInclude Include="Input\InputManager.h" />
     <ClInclude Include="resource.h" />
-    <ClInclude Include="StageScene.h" />
-    <ClInclude Include="TitleScene.h" />
+    <ClInclude Include="Scene\ClearScene.h" />
+    <ClInclude Include="Scene\GameManager.h" />
+    <ClInclude Include="Scene\IScene.h" />
+    <ClInclude Include="Scene\StageScene.h" />
+    <ClInclude Include="Scene\TitleScene.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
